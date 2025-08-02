@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
         .a{
             text-decoration: underline dotted solid gray;
@@ -27,8 +28,23 @@
             list-style-position: inside;
             list-style-image: url(p1.jpg);
         }
-        
-    </style>
+        .box{
+            height: 200px;
+            width: 400px;
+            background-color: greenyellow;
+            border: 2px solid black;
+            margin: 10px;
+        }
+        .box:hover{
+            opacity: 0.5;
+        }
+        .fa-thin{
+            padding: 40px;
+        }
+        .box:hover.fa-thin{
+            visibility: visible;
+        }
+        </style>
 </head>
 <body>
     <a href="background.html">background</a>||
@@ -46,8 +62,9 @@
 
     <br><br>
     <ol>
-        <li>tyghbn
-        </li>
+        <li>tyghbn</li>
     </ol>
-</body>
+
+    <div class="box"><i class="fa-thin fa-user"></i></div>
+    </body>
 </html>
