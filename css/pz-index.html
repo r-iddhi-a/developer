@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        header{
+            background-color: tomato;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 24px;
+            font-family: 'Courier New', Courier, monospace;
+         }
+         .box{
+            height: 100px;
+            width: 100px;
+            border: 2px solid black;
+            display: block;
+
+            }
+         .b1{
+            background-color: green;
+            position: relative;
+            top: 100px;
+            left: 100px;
+            z-index: 4;
+            place-items: center;
+        }
+        .b2{
+            background-color: yellow;
+            position: relative;
+            top: 75px;
+            left: 75px;
+            z-index: 3;
+        }
+        .b3{
+            background-color: red;
+            position: relative;
+            top: 50px;
+            left: 50px;
+            z-index: 2;
+        }
+        .b4{
+            background-color: blue;
+            position: relative;
+            top: 25px;
+            left: 25px;
+            z-index: 1;
+        }
+    </style>
+</head>
+<body>
+    <header>css z-index property with ex</header>
+
+    <div class="box b1">1</div>
+    <div class="box b2">2</div>
+    <div class="box b3">3</div>
+    <div class="box b4">4</div>
+</body>
+</html>
