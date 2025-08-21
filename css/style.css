@@ -1,26 +1,24 @@
-
-        /*3 selectors-tagname,classname,id*/
-        /*tagname*/
-        h4{
-           color: salmon;
-           background-color: blanchedalmond;
-           font-size: 35px;
-        }
-        /*id name*/
-        #txt
-        {
-            color: chartreuse;
-            background-color: red;
-            height: 100px;
-            width: 100px;
-        }
-        /*classname*/
-        .box{
-            height: 300px;
-            width: 400px;
-            background-color: chocolate;
-            border-width: 2px;
-            border-color: rebeccapurple;
-            border-style: solid;
-            display: blocks;
-        }
+#contactform{
+    background-color: yellowgreen;
+    padding: 20px;
+    width: 400px;
+    margin: 50px auto;
+    border-radius: 10px;
+}
+.form{
+  display: inline;
+  padding: 5px;
+  margin: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+#submitBtn{
+    background-color: #007BFF;
+  color: white;
+  padding: 12px;
+  border-radius: 5px;
+  font-size: 16px;
+}
+#submitBtn:hover {
+  background-color: #0056b3;
+}
