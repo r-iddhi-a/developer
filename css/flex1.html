@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+        .main{
+            height: 100px;
+            background-color: peru;
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+            justify-content: space-between;
+            gap: 20px;
+            font-size: larger;
+        }
+        
+        
+        .child{
+            flex-direction: row;
+            display: flex;
+            gap: 20px;
+            padding: 10px;
+            margin: 5px;
+        }
+        .parent{
+            flex-direction: row;
+            display: flex;
+            padding: 20px;
+        }
+        
+        .sidebar{
+            height: 528px;
+            width: 300px;
+            background-color: beige;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: larger;
+            
+        }
+        .content{
+            height: 528px;
+            width: 1240px;
+            display: flex;
+            background-color: bisque;
+            align-items: center;
+            justify-content: center;
+           font-size: larger;
+        }
+        .middle{
+            display: flex;
+            flex-direction: row;
+        }
+        .footer{
+            height:100px;
+            background-color: peru;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: larger;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="parent">LOGO</div>
+        <div class="child">
+            <div class="a">HOME</div>
+            <div class="b">ABOUT</div>
+            <div class="c">CONTACT</div>
+            <div class="d">LOGIN</div>
+        </div>
+    </div>
+    <div class="middle">
+    <div class="sidebar">Sidebar</div>
+    <div class="content">Content</div>
+    </div>
+    <div class="footer">Footer</div>
+</body>
+</html>
