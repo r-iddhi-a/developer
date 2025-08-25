@@ -9,44 +9,30 @@
     <audio src="sample-3.ogg" controls autoplay muted loop></audio>
     <video src="SampleVideo_1280x720_2mb.mp4"controls autoplay muted loop></video>
     
-    <canvas id="myCanvas" width="300" height="150" style="border:1px solid #000;"></canvas>
+    <h1>HTML5 Empty Canvas</h1>
 
-    <script>
-       const canvas = document.getElementById("myCanvas");
-       const ctx = canvas.getContext("2d");
-
-    // Rectangle
-    ctx.fillStyle = "skyblue";
-    ctx.fillRect(20, 20, 100, 60);
-
-    // Circle
-    ctx.beginPath();
-    ctx.arc(200, 50, 40, 0, 2 * Math.PI);
-    ctx.fillStyle = "red";
-    ctx.fill();
-    ctx.lineWidth = 4;
-    ctx.strokeStyle = "blue";
-    ctx .stroke();
-    </script>
+    <canvas id="myCanvas" width="200" height="100" style="border:1px solid #000000;">
+    Sorry, your browser does not support canvas.
+    </canvas>
 
     <h2>SVG rect Element</h2>
 
-<svg width="300" height="130" xmlns="http://www.w3.org/2000/svg">
-  <rect width="200" height="100" x="10" y="10" rx="20" ry="20" fill="blue" />
-  Sorry, your browser does not support inline SVG.
-</svg>
+    <svg width="300" height="130" xmlns="http://www.w3.org/2000/svg">
+   <rect width="200" height="100" x="10" y="10" rx="20" ry="20" fill="blue" />
+   Sorry, your browser does not support inline SVG.
+    </svg>
 
-<h2>SVG polygon Element</h2>
-<svg height="220" width="500" xmlns="http://www.w3.org/2000/svg">
-  <polygon points="100,10 150,190 50,190" style="fill:lime;stroke:purple;stroke-width:3" />
-  Sorry, your browser does not support inline SVG.
-</svg>
+    <h2>SVG polygon Element</h2>
+    <svg height="220" width="500" xmlns="http://www.w3.org/2000/svg">
+    <polygon points="100,10 150,190 50,190" style="fill:lime;stroke:purple;stroke-width:3" />
+    Sorry, your browser does not support inline SVG.
+    </svg>
 
-<h2>SVG fill-rule attribute</h2>
-<svg height="210" width="500" xmlns="http://www.w3.org/2000/svg">
-  <polygon points="100,10 40,198 190,78 10,78 160,198" fill="lime" fill-rule="evenodd" />
-  Sorry, your browser does not support inline SVG.
-</svg>
+    <h2>SVG fill-rule attribute</h2>
+    <svg height="210" width="500" xmlns="http://www.w3.org/2000/svg">
+    <polygon points="100,10 40,198 190,78 10,78 160,198" fill="lime" fill-rule="evenodd" />
+    Sorry, your browser does not support inline SVG.
+    </svg>
 
 </body>
 </html>
