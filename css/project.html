@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
         *{
             box-sizing: border-box;
@@ -12,14 +13,23 @@
         }
         .main{
             height: 100px;
-            background-color: peru;
+            background-color: darkblue;
             display: flex;
             align-items: center;
             flex-direction: row;
             justify-content: space-between;
             gap: 20px;
-            font-size: larger;   
+            font-size: larger;  
+            color: white; 
         }
+        a{
+            color: #fff;
+            text-decoration: none;
+        }
+       
+       a:hover{
+          color: lightskyblue;
+       }
         
         
         .child{
@@ -28,34 +38,26 @@
             gap: 20px;
             padding: 10px;
             margin: 5px;
+            
         }
         .parent{
             flex-direction: row;
             display: flex;
             padding: 20px;
-            font-size: x-large;
-            color: purple;
+            font-size: xx-large;
+            color: lightskyblue;
         }
-        
-        .sidebar{
-            height: 700px;
-            width: 300px;
-            background-color: beige;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: larger;
-            
-        }
+
         .content{
-            height: 700px;
-            width: 1240px;
-            display: flex;
-            background-color: bisque;
-            align-items: center;
-            justify-content: center;
-           font-size: larger;
-           background-image: url(https://www.openhrms.com/blogs/Uploads/BlogImage/top-ten-features-of-human-resource-management-system-1.png);
+           height: 600px;
+           width: 1535px;
+           background-color: bisque;
+           background-image: url(https://pittcc.edu/wp-content/uploads/2023/04/Human-Resources-Management-Background.jpg);
+           background-size: cover;
+           color: yellow;
+           font-size: xx-large;
+           justify-content: center;
+           display: flex;
 
         }
         .middle{
@@ -63,30 +65,106 @@
             flex-direction: row;
         }
         .footer{
-            height:100px;
-            background-color: peru;
+            height:230px;
+            background-color: darkblue;
             display: flex;
-            align-items: center;
-            justify-content: center;
             font-size: larger;
+            padding: 10px;
+            color:white;
+        }
+        .footer div{
+               text-align: center;
+        }
+        .col-2{
+            flex-grow: 2;
+        }
+        .footer div h3{
+            font-weight: 300;
+            margin-bottom: 30px;
+            letter-spacing: 1px;
+            color: aquamarine;
+        }
+        .col-1 a{
+            display: block;
+            color: aqua;
+            text-decoration: none;
+        }
+        form input{
+            width:400px;
+            height: 45px;
+            border-radius: 4px;
+            text-align: center;
+            margin-top: 20px;
+            margin-bottom: 40px;
+            outline: none;
+            border: none;
+        }
+        form button{
+            background: transparent;
+            border: 2px solid white;
+            color: #fff;
+            border-radius: 30px;
+            padding: 10px 30px;
+            font-size: 15px;
+            cursor: pointer;
+        }
+        .social-icons{
+            margin-top: 30px;
+        }
+        .social-icons i{
+              font-size: 22px;
+              margin: 10px;
+              cursor: pointer;
         }
         
     </style>
 </head>
 <body>
     <div class="main">
-        <div class="parent">HUMAN RESOURCE MANAGEMENT APPLICATION</div>
+        <div class="parent"><i class="fa-solid fa-user"></i>HUMAN RESOURCE MANAGEMENT APPLICATION</div>
         <div class="child">
-            <div class="a">HOME</div>
-            <div class="b">ABOUT</div>
-            <div class="c">CONTACT</div>
-            <div class="d">LOGIN</div>
+            <div class="a"><a href="#">HOME</a></div>
+            <div class="b"><a href="#">EMPLOYEES</a></div>
+            <div class="c"><a href="#">PAYROLL</a></div>
+            <div class="d"><a href="#">LEAVES</a></div>
+            <div class="d"><a href="#">REPORTS</a></div>
         </div>
     </div>
     <div class="middle">
-    <div class="sidebar">Sidebar</div>
-    <div class="content">Content</div>
+    
+    <div class="content"><br><br>HUMAN RESOURCE MANAGEMENT<br><br>
+        I am convinced that nothing we do is more important than hiring and developing people.<br>
+        At the end of the day,you bet on people not on strategies<br>
+           "LAWRENCE BOSSIDY"<br><br>
+        Over View,HR Expenses,HR Expenditure By Country,HR Recruitment And Selection</div>
     </div>
-    <div class="footer">Footer</div>
+    <div class="footer">
+        <div class="col-1">
+            <h3>USEFUL LINKS</h3>
+               <a href="#">HOME</a>
+               <a href="#">PRODUCTS</a>
+               <a href="#">SOLUTIONS</a>
+               <a href="#">BLOG</a>
+               <a href="#">HELP & SUPPORT</a>
+        </div>
+        <div class="col-2">
+             <h3>NEWSLETTER</h3>
+             <form>
+                <input type="email" placeholder="Your Email Address" required><br>
+                <button type="submit">SUBSCRIBE NOW</button>
+             </form>
+        </div>
+        <div class="col-3">
+            <h3>CONTACT</h3>
+            <p>123,xyz road, BSK 3<br>Bangalore,karnataka,In</p>
+            <div class="social-icons">
+                <a  class="abc" href="#"><i class="fa-brands fa-square-facebook"></i></a>
+                <a  class="def" href="#"><i class="fa-brands fa-square-twitter"></i></a>
+                <a  class="ghi"><i class="fa-brands fa-square-instagram"></i></a>
+                <a class="jkl"><i class="fa-brands fa-square-behance"></i></a>
+            </div>
+        </div>
+    </div>
+
 </body>
 </html>
