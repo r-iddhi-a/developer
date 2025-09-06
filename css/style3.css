@@ -5,6 +5,7 @@
             width: 1525px;
             opacity: 0.7;
             background-size: cover;
+            object-fit: contain;
         }
         .sidebar{
               color: blue;
