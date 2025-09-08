@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+       * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 2.6;
+        } 
+
+       nav {
+           background-color: yellowgreen;
+           color: #fff;
+           padding: 15px;
+       }
+
+       nav ul {
+          display: flex;
+          list-style: none;
+          justify-content: space-around;
+          font-size: 25px;
+      }
+
+      nav ul li a {
+          color: white;
+          text-decoration: none;
+          padding: 20px;
+       }
+
+      nav ul li a:hover {
+          background-color: teal;
+          border-radius: 4px;
+      }
+
+      .container {
+          display: flex;
+          flex-wrap: wrap;
+          padding: 2rem;
+     }
+
+      .column {
+          flex: 1;
+          padding: 1rem;
+          min-width: 300px;
+       }
+
+      .column:first-child {
+          background-color: #f4f4f4;
+      }
+
+      .column:last-child {
+          background-color: #e2e2e2;
+      }
+
+      footer {
+          background-color: yellowgreen;
+          color: white;
+          text-align: center;
+          padding: 20px;
+          margin-top: 50px;
+          font-size: 25px;
+       }
+       @media (min-width:349px) and (max-width:459px) {
+          .container{
+             width: 100%;
+          }
+        
+       }
+    </style>
+</head>
+<body>
+     <nav>
+        <ul>
+           <li><a href="#">Home</a></li>
+           <li><a href="#">About</a></li>
+           <li><a href="#">Services</a></li>
+           <li><a href="#">Contact</a></li>
+        </ul>
+     </nav>
+
+  <div class="container">
+    <div class="column">
+      <h2>Column One</h2>
+      <p>This is the first column of content. You can add text, images, or anything else here.</p>
+    </div>
+    <div class="column">
+      <h2>Column Two</h2>
+      <p>This is the second column. It will stack below the first on smaller screens.</p>
+    </div>
+  </div>
+
+   <footer>
+        <p><i class="fa-regular fa-copyright"></i> 2025 Your Website. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
