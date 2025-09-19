@@ -1,0 +1,349 @@
+       *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .f1{
+            color: lavender;
+            padding: 30px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            font-size: 40px;
+            background-color: lightsalmon;
+        }
+        .body{
+            background-image: url('https://cdn.pixabay.com/photo/2017/08/07/11/57/furniture-2603068_1280.jpg');
+            height: 700px;
+            width: 100%;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        @media only screen and(max-width:500px) {
+            .f1{
+                width: 100%;
+            }
+        }
+        .header a{
+           color: lemonchiffon;
+           text-decoration: none;
+           font-size: 25px;
+           display: inline-block;
+           padding: 10px;
+        }
+        a:hover{
+            color: darkred;
+        }
+        .input-form{
+            height: 30px;
+            width: 40px;
+            display: flex;
+            justify-content: space-around;
+            margin-top :15px; 
+        }
+        .login{
+            font-size: 20px;
+            margin-left: 60px;
+            margin-top: 20px;
+        }
+        .login:hover{
+            color: lightcoral;
+        }
+        .farni{
+            font-size: 70px;
+            position: relative;
+            top:200px;
+            left:600px;
+            color:papayawhip;
+        }
+        .farni-1{
+            font-size: 30px;
+            color:lightgoldenrodyellow;
+            position: relative;
+            right: 90px; 
+        }
+        .farni-2{
+            font-size: 30px;
+            color:lightgoldenrodyellow;
+            position: relative;  
+            left: 30px;
+        }
+        .content{
+             margin: 50px;
+             margin-left: 650px;
+             font-size: 40px;
+        }
+        .con1{
+            font-size: 20px;
+            position: absolute;
+            right: 500px;
+        }
+        
+        .f2{
+            position: relative;
+            right: 470px;
+        }
+        .img1{
+            position: relative;
+            right: 630px;
+        }
+        .img2{
+            position: relative;
+            right: 530px;
+        }
+        .img3{
+            position: relative;
+            right: 430px;
+        }
+         .img4{
+            position: relative;
+            right: 330px;
+        }
+        .con2{
+            display: flex;
+            justify-content: space-around;
+            flex-direction: row;
+        }
+        .col3{
+            display: flex;
+            justify-content: space-around;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+        .i1{
+            position: relative;
+            right: 1800px;
+            top:200px;
+        }
+        .i2{
+            position: relative;
+            right : 1350px;
+            top:153px;
+        }
+        .i3{
+            position: relative;
+            right : 950px;
+            top:105px;
+        }
+        .i4{
+            position: relative;
+            right : 600px;
+            top:60px;
+        }
+        .i5{
+            position: absolute;
+            right: 1250px;
+            top: 1350px;
+            font-size: 20px;
+        }
+        .i6{
+            position: absolute;
+            right: 850px;
+            top: 1350px;
+            font-size: 20px;
+        }
+        .i7{
+            position: absolute;
+            right: 430px;
+            top: 1350px;
+            font-size: 20px;
+        }
+        .i8{
+            position: absolute;
+            right: 30px;
+            top: 1350px;
+            font-size: 20px;
+        }
+        .btn-read{
+            position: relative;
+            top:230px;
+            right: 1780px;
+            font-size: 20px;
+            background-color: burlywood;
+            border: 2px solid black;
+        }
+         .btn-read1{
+            position: relative;
+            top:185px;
+            right: 1350px;
+            font-size: 20px;
+            background-color: burlywood;
+            border: 2px solid black;
+        }
+         .btn-read2{
+            position: relative;
+            top:140px;
+            right: 950px;
+            font-size: 20px;
+            background-color: burlywood;
+            border: 2px solid black;
+        }
+         .btn-read3{
+            position: relative;
+            top:93px;
+            right: 550px;
+            font-size: 20px;
+            background-color: burlywood;
+            border: 2px solid black;
+        }
+        .btn-read:hover{
+            transform: scale(2,2);
+        }
+        .btn-read1:hover{
+            transform: scale(2,2);
+        }
+        .btn-read2:hover{
+            transform: scale(2,2);
+        }
+        .btn-read3:hover{
+            transform: scale(2,2);
+        }
+        .img1:hover{
+            transform: translate(20px,20px);
+        }
+        .img2:hover{
+            transform: translate(20px,20px);
+        }
+        .img3:hover{
+            transform: translate(20px,20px);
+        }
+        .img4:hover{
+            transform: translate(20px,20px);
+        }
+        .pro1{
+            position: relative;
+            top:100px;
+            margin: 20px;
+            margin-left: 650px;
+            font-size: 40px;
+        }
+        .pro2{
+            font-size: 20px;
+            position: absolute;
+            left: 600px;
+            margin-top: 150px;
+        }
+        .carousel-slide{
+            position: absolute;
+            margin-top:600px;
+        }
+        .back1{
+            background-image: url(https://png.pngtree.com/background/20231030/original/pngtree-d-rendering-of-a-kitchenette-featuring-a-worktop-sink-cooktop-and-picture-image_5802213.jpg);
+            height: 800px;
+            width: 100%;
+            margin-top: 180px;
+            background-repeat: no-repeat;
+            opacity: 0.5;
+            background-size: cover;
+        }
+        .mid1{
+            position: relative;
+            left: 650px;
+            top:100px;
+            font-size: 70px;
+        }
+        .mid2{
+            position: relative;
+            left: 670px;
+            top:150px;
+            font-size: 25px;
+        }
+        .mid3{
+            position: relative;
+            left:30px;
+            top:200px;
+        }
+        .footer{
+            position: relative;
+            top:500px;
+        }
+        .contact_text{
+           margin-left: 200px;
+           position: relative;
+           top:20px;
+        }
+        .mail_sectin{
+            margin-top: 70px;
+            font-size: 25px;
+            margin-left: 200px;
+        }
+        .footer{
+            background-color: wheat;
+            height: 600px;
+            width: 100%;
+        }
+        .map_main{
+            display: block;
+            height: 10px;
+            width: 700px;
+            position: relative;
+            bottom: 500px;
+            left: 700px;
+        }
+        .email-bt{
+            font-size: 30px;
+        }
+        .massage-bt{
+            font-size: 30px;
+        }
+        .send_bt{
+            font-size: 30px;
+        }
+        .footer1{
+            height: 400px;
+            width: 100%;
+            color: white;
+            background-color: black;
+        }
+        .foot1{
+            position: relative;
+            left: 100px;
+            top:70px;
+        }
+        .foot2{
+            position: relative;
+            left: 100px;
+            top:100px;
+        }
+        .foot3{
+            position: relative;
+            left: 470px;
+            bottom: 70px;
+        }
+        .foot4{
+            position: relative;
+            left: 500px;
+            bottom: 40px;
+        }
+        .foot5{
+            position: relative;
+            left: 900px;
+            bottom: 210px;
+        }
+        .foot6{
+            position: relative;
+            left: 900px;
+            bottom: 180px;
+        }
+        .foot7{
+            position: relative;
+            left: 1250px;
+            bottom: 345px;
+        }
+        .foot8{
+            position: relative;
+            left: 1250px;
+            bottom: 320px;
+        }
+        .email{
+            position: relative;
+            bottom: 280px;
+            left: 1150px;
+        }
+        .subscribe{
+            position: relative;
+            bottom: 280px;
+            left: 1150px;
+        }
+       
