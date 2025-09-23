@@ -1,0 +1,62 @@
+ .main{
+         text-align: center;
+         margin: 30px;
+       }
+       .main1{
+        text-align: center;
+        margin: 10px;
+       }
+        .back1{
+            background-image: url(https://png.pngtree.com/background/20231030/original/pngtree-d-rendering-of-a-kitchenette-featuring-a-worktop-sink-cooktop-and-picture-image_5802213.jpg);
+            height: 500px;
+            margin: 50px;
+            background-repeat: no-repeat;
+            opacity: 0.7;
+            background-size: cover;
+            text-align: center;
+            padding: 120px;
+        }
+        .footer1{
+            background-color:#2C2C2C;
+            color:#FFFFFF;
+            padding:40px 20px;
+            font-family:sans-serif;
+            display:flex;
+            flex-wrap:wrap;
+            justify-content:space-between;
+            margin:auto;
+        }
+        .foot1{
+            flex: 1;
+            min-width:200px;
+            margin-bottom:20px;
+        }
+        .foot2{
+            list-style:none; 
+            padding:0;
+            color:#FFFFFF; 
+            text-decoration:none;
+        }
+        .contact{
+            flex:1; 
+            min-width:250px; 
+            margin-bottom:10px;
+        }
+        .social{
+            flex:1; 
+            min-width:200px; 
+            margin-bottom:20px;
+            color:#FFFFFF;
+
+        }
+        .bottom{
+             text-align: center;
+             font-size: 25px;
+        }
+        .navbar-brand{
+            height: 100px;
+            font-size: 30px;
+        }
+        .nav-item{
+            font-size: 25px;
+        }

@@ -20,11 +20,6 @@
             background-repeat: no-repeat;
             background-size: cover;
         }
-        @media only screen and(max-width:500px) {
-            .f1{
-                width: 100%;
-            }
-        }
         .header a{
            color: lemonchiffon;
            text-decoration: none;
@@ -256,7 +251,7 @@
         }
         .footer{
             position: relative;
-            top:500px;
+            top:100px;
         }
         .contact_text{
            margin-left: 200px;

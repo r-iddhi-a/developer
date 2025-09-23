@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="bootstrap.min.css" rel="stylesheet">
+    <style>
+        .header{
+            background-color:  chocolate;
+            height: 200px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            font-size: 50px;
+            padding: 40px;
+        }
+        .sidebar{
+            background-color: burlywood;
+            height: 700px;
+            width: 300px;
+        }
+        .form-label{
+            display: flex;
+        
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container-fiuid">
+        <div class="row">
+        <div class="header">WELCOME TO THE PAGE</div>
+
+        <div class="col-3">
+           <div class="sidebar"></div>
+        </div>
+
+        <div class="col-9 mt-4">
+        <div class="content">
+        <form>
+        <div class="mb-3">
+
+            <h2 align="center">LOGIN FORM</h2><br><br>
+ 
+        <button type="submit" name="Login" class="login">Login</button><br><br>
+
+        <label for="exampleInputEmail1" class="form-label">Email address</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Your Email">
+    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label">Password</label>
+    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Enter Your Password">
+  </div>
+  <div class="mb-3 form-check">
+    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+</div>
+      </div>
+        </div>
+    </div>
+    <script src="bootstrap.bundle.min.js"></script>
+</body>
+</html>
