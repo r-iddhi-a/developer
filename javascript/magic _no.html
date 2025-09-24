@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let no=1729
+        let sum=0
+        while (no>0) {
+            let r=no%10
+            no=Math.floor(no/10)
+            sum=sum+r
+        }
+        document.write('<br>no of digit '+no)
+        document.write('<br> sum of no '+sum)
+        let rev=0
+        let f=sum
+        while(sum>0){
+            let r=sum%10
+            rev=(rev*10)+r
+            sum=Math.floor(sum/10)
+        } 
+        document.write('<br> reverse of no '+rev)
+        let m=f*rev
+        document.write('<br>multiply is '+m)
+        if(n=m)
+        {
+            document.write('<br>It is magic no ')
+        }
+        else{
+            document.write('<br>It is not magic no ')
+        }
+    </script>
+</body>
+</html>
