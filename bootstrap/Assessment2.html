@@ -9,7 +9,6 @@
         .header{
             background-color:  chocolate;
             height: 200px;
-            width: 100%;
             display: flex;
             justify-content: center;
             font-size: 50px;
@@ -24,19 +23,21 @@
             display: flex;
         
         }
-        @media only screen and (max-width:500px){
-            .header{
-                background-color: chocolate;
-                width: 100%;
-                font-size: 30px;
-                text-align: center;
-                padding: 60px;
-            }
-            .sidebar{
-                width: 100px;
-    
-            }
+       @media (max-width: 768px) {
+  .header {
+    grid-template-columns: 1fr;
+  }
+
+   .form-label{
+          flex-direction: row; 
+        
         }
+
+  .sidebar {
+    flex-direction: column;
+  }
+}
+
         
     </style>
 </head>
@@ -46,7 +47,7 @@
         <div class="header">WELCOME TO THE PAGE</div>
 
         <div class="col-3">
-           <div class="sidebar"></div>
+          <div class="sidebar"></div>
         </div>
 
         <div class="col-9 mt-4">
