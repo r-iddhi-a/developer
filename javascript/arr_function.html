@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let arr=[1,2,3,4,5]
+        document.write('<br>'+arr)
+        document.write('<br> Total elements are '+arr.length)
+
+        arr.push(11,44,55) //add element in last position
+        document.write('<br>'+arr)
+
+        arr.pop() //remove an element in last position
+        document.write('<br>'+arr)
+
+        arr.unshift(100,200,300) //first position in add element 
+        document.write('<br>'+arr)
+
+        arr.shift() //first position in remove element 
+        document.write('<br>'+arr)
+
+        arr.splice(3,0,25,25,55,33) //add and remove element
+        document.write('<br>'+arr)
+
+        arr.splice(2,3) // first index number and second number delete element
+        document.write('<br>'+arr)
+
+        let arr1=arr.slice(4)
+        document.write('<br>'+arr1)
+    </script>
+</body>
+</html>
