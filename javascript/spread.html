@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let arr=[10,20,30,40,50]
+        let arr2=[100,200,300]
+
+        //spread opeartor -- ...(tripal dot opearator)
+        //we can fetch all element using ...
+        let merge_arr=[...arr,...arr2]
+
+        //merging
+        document.write('<br>Merge array is '+merge_arr)
+
+        //destructuring
+        /*const [a,b,c,d,x,y,z,j]=merge_arr
+        document.write('<br>'+a)
+        document.write('<br>'+x)
+        document.write('<br>'+j)
+        document.write('<br>'+z)*/
+
+        //...rest of operator remaining element
+        const [a,b,c,...z]=merge_arr
+        document.write('<br>'+a)
+        document.write('<br>'+b)
+        document.write('<br>'+c)
+        document.write('<br>'+z)
+
+    </script>
+</body>
+</html>

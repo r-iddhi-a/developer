@@ -7,13 +7,14 @@
 </head>
 <body>
     <script>
-        for(let i=1;i<=5;i++){
-            for(let j=1;j<=5;j++)
-            if(j<=i){
-                document.write( j+" " )
-            }
-        document.write('<br>')    
+        let obj={
+            "name":"test123",
+            "age":25,
+            "salary":36000
         }
+        const {name,salary}=obj
+        document.write('<br>Name is '+name)
+        document.write('<br>Salary is '+salary)
     </script>
 </body>
 </html>

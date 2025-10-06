@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="demo"></div>
+    <div id="demo1"></div>
+    <button onclick="add()">Add</button>
+    <button onclick="xyz()">Change</button>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam aliquam, repellat vel, modi sunt, maiores sit aspernatur nam expedita quisquam iure vitae dolorem quam eveniet rerum? Excepturi velit nobis quo fugit quae sapiente eveniet atque doloremque, placeat porro! Eligendi odio fuga nam tempore libero laudantium iusto delectus. Quod, animi repellat saepe officia unde perspiciatis mollitia provident velit amet omnis vel nobis asperiores laboriosam! Repudiandae rem exercitationem ipsam et, porro facere tempora quasi veniam nisi magni voluptatem cupiditate, alias eaque placeat repellendus doloremque enim eligendi mollitia! Eveniet nulla necessitatibus provident, ullam culpa ab quos placeat, sed ipsum, rerum porro asperiores aspernatur.</p>
+
+    <p class="abc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam aliquam, repellat vel, modi sunt, maiores sit aspernatur nam expedita quisquam iure vitae dolorem quam eveniet rerum? Excepturi velit nobis quo fugit quae sapiente eveniet atque doloremque, placeat porro! Eligendi odio fuga nam tempore libero laudantium iusto delectus. Quod, animi repellat saepe officia unde perspiciatis mollitia provident velit amet omnis vel nobis asperiores laboriosam! Repudiandae rem exercitationem ipsam et, porro facere tempora quasi veniam nisi magni voluptatem cupiditate, alias eaque placeat repellendus doloremque enim eligendi mollitia! Eveniet nulla necessitatibus provident, ullam culpa ab quos placeat, sed ipsum, rerum porro asperiores aspernatur.</p>
+
+    <p class="abc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam aliquam, repellat vel, modi sunt, maiores sit aspernatur nam expedita quisquam iure vitae dolorem quam eveniet rerum? Excepturi velit nobis quo fugit quae sapiente eveniet atque doloremque, placeat porro! Eligendi odio fuga nam tempore libero laudantium iusto delectus. Quod, animi repellat saepe officia unde perspiciatis mollitia provident velit amet omnis vel nobis asperiores laboriosam! Repudiandae rem exercitationem ipsam et, porro facere tempora quasi veniam nisi magni voluptatem cupiditate, alias eaque placeat repellendus doloremque enim eligendi mollitia! Eveniet nulla necessitatibus provident, ullam culpa ab quos placeat, sed ipsum, rerum porro asperiores aspernatur.</p>
+
+    <p class="abc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam aliquam, repellat vel, modi sunt, maiores sit aspernatur nam expedita quisquam iure vitae dolorem quam eveniet rerum? Excepturi velit nobis quo fugit quae sapiente eveniet atque doloremque, placeat porro! Eligendi odio fuga nam tempore libero laudantium iusto delectus. Quod, animi repellat saepe officia unde perspiciatis mollitia provident velit amet omnis vel nobis asperiores laboriosam! Repudiandae rem exercitationem ipsam et, porro facere tempora quasi veniam nisi magni voluptatem cupiditate, alias eaque placeat repellendus doloremque enim eligendi mollitia! Eveniet nulla necessitatibus provident, ullam culpa ab quos placeat, sed ipsum, rerum porro asperiores aspernatur.</p>
+
+    <p class="abc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam aliquam, repellat vel, modi sunt, maiores sit aspernatur nam expedita quisquam iure vitae dolorem quam eveniet rerum? Excepturi velit nobis quo fugit quae sapiente eveniet atque doloremque, placeat porro! Eligendi odio fuga nam tempore libero laudantium iusto delectus. Quod, animi repellat saepe officia unde perspiciatis mollitia provident velit amet omnis vel nobis asperiores laboriosam! Repudiandae rem exercitationem ipsam et, porro facere tempora quasi veniam nisi magni voluptatem cupiditate, alias eaque placeat repellendus doloremque enim eligendi mollitia! Eveniet nulla necessitatibus provident, ullam culpa ab quos placeat, sed ipsum, rerum porro asperiores aspernatur.</p>
+
+    <input type="checkbox" name="ch1" value="checked">10th
+    <input type="checkbox" name="ch1" value="checked">12th
+    <input type="checkbox" name="ch1" value="checked">BCA
+    <input type="checkbox" name="ch1" value="checked">MCA
+    <script>
+        document.getElementById("demo").innerHTML = "<b>Hello...!!!</b>";
+        document.getElementById("demo1").innerText = "<b>Hello......!!</b>";
+
+        const add = () => {
+            document.getElementById('demo').style.color="red"
+            document.getElementById('demo').style.backgroundColor="yellowgreen"
+        }
+
+        const xyz = () => {
+            document.getElementById('demo').style.color="blue"
+            document.getElementById('demo').style.backgroundColor="aqua"
+        }
+        /*let a=document.getElementsByTagName("p")
+        for(let i=0;i<=a.length;i++){
+            if(i%2==0){
+                a[i].style.color="green"
+            }
+            else{
+                a[i].style.color="yellowgreen"
+            }
+        }/*
+        /*let b=document.getElementsByClassName("abc")
+        for(var x in b){
+            b[x].style.color="blue"       
+        }*/
+
+        document.getElementsByName('ch1')[1].checked=true
+        document.getElementsByName('ch1')[3].checked=true
+    
+        
+       // let c=document.getElementsByName("xyz")
+       // c[0].style.color="orange"
+       // console.log(c);
+        
+        //a[0].style.color="purple"
+        //console.log(a);
+        //document.getElementsByTagName("p")[1].style.color="purple"
+    </script>
+</body>
+</html>
