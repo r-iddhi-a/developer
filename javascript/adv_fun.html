@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let arr=[10,20,30,40,50]
+        //map function -- it doesnot change the Original array,
+        //create copy of array
+        let res=arr.map((i,index)=>{
+            return i*2
+        })
+        document.write('<br>'+arr)
+        document.write('<br>'+res)
+        //filter function always return array
+        let ans=arr.filter((a,b)=>{
+            return a==20
+        })
+        console.log(ans)
+        console.log("filter func called...")
+        //find function always return single value
+        res=arr.find((a,b)=>{
+            return a==20
+        })
+        console.log("find func called...")
+        console.log(res);
+        //includes--return boolean -true or false
+        //reduce - reduceRight function
+        //[10,20,30,40,50]-i prev value,j-next value
+        let total=arr.reduce((i,j)=>{
+            return i+j  //10+20=30 i=30, j=40
+        })
+        document.write('<br>total is '+total)
+    </script>
+</body>
+</html>
