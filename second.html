@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //there are 4 types of functions in js
+        //1)Take nothing return nothing
+        function add(){
+            let a=30
+            let b=60
+            document.write('<br>Addition is '+(a+b))
+        }
+        add()
+        //2)Take Something return nothing
+        function mult(a,b){
+            document.write('<br>multiply is '+(a*b))
+        }
+        mult(4,9)
+        //3)Take nothingh return something
+        function area(){
+            const pi=3.14
+            let r=1.7
+            return(pi*r**2)
+        }
+        document.write('<br>Area is '+area())
+        //take something return something
+        function cube(a){
+            return(a**3)
+        }
+        document.write('<br>cube is '+cube(4))
+    </script>
+</body>
+</html>
