@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>The background color will change after 5 seconds</h2>
+    <h3>Digital Clock</h3>
+    <div id="clock"></div>
+    <script>
+        setTimeout(function() {
+            document.body.style.backgroundColor = "yellow";
+        }, 2000);
+
+        setInterval(function(){
+            const now = new Date(); // Get current date and time
+            const hours = now.getHours().toString().padStart(2, '0');
+            const minutes = now.getMinutes().toString().padStart(2, '0');
+            const seconds = now.getSeconds().toString().padStart(2, '0');
+            document.getElementById("clock").innerHTML = `${hours}:${minutes}:${seconds}`;
+        }, 1000);
+    </script>
+</body>
+</html>

@@ -34,6 +34,39 @@
             return i+j  //10+20=30 i=30, j=40
         })
         document.write('<br>total is '+total)
+        let total1=arr.reduceRight((i,j)=>{
+            console.log("i is "+i);
+            console.log("j is "+j);
+            return i+j  //10+20=30 i=30, j=40
+        },100) //inital value
+    
+         let arr2=[10,20,80,40,50]
+        let max=arr2.reduce((i,j)=>{
+            if(i<j){   //10<20
+                i=j    //i=45 j=66 i=66 j=54
+            } 
+            return i 
+        })
+        document.write('<br> Maximum is '+max)
+
+        arr=["abc","xyz","abc","pqr","abc","try","xyz"]
+        result=arr.reduce((i,j)=>{
+            //i={},j=abc
+            if(!i[j]){
+                i[j]=1
+            }
+            else{
+                i[j]++
+            }
+            return i
+        })
+        console.log(result)
+        /*{
+            "abc":1,
+            "xyz":2,
+            "pqr":1,
+            "try":1,
+        }*/
     </script>
 </body>
 </html>

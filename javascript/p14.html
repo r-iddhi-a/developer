@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Javascript Event Listeners</h3>
+    <div id="demo"></div>
+    <script>
+        let btn=document.createElement('button')
+        console.log(btn)
+        let txt=document.createTextNode("click me")
+        btn.appendChild(txt)
+        document.getElementById('demo').appendChild(btn)
+        btn.addEventListener("click",function(){
+        alert("Button Clicked!")
+        })
+    </script>
+</body>
+</html>
