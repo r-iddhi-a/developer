@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+`<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
@@ -9,6 +9,16 @@
     <script>
         //nested function
         //callback hell problem -soiution --async-await/promises
+        /*if one function calls another function,for example:
+
+        const  display=()=>{
+        show();
+        }
+
+        and if there is a problem before the function is called, then it stops there because of synchronization.
+        this situation is known as the callback hell problem.
+        we can solve this problem using promises or async/await*/
+
         const add=async()=>{
             await minus()
         }

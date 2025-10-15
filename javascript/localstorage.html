@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>localstorage Example</h3>
+    <div id="demo">
+    <button onclick="setData()">Set Data</button>
+    <button onclick="disp()">Display Data</button>
+    <button onclick="delData()">Delete Age</button>
+    <button onclick="delAll()">Delete All</button>
+    </div>
+    <script>
+        //curd operation
+        //localstorage -- temporary storage-browser based
+        const setData=()=>{
+            localStorage.setItem("name","abcd")
+            localStorage.setItem("age",20)
+            localStorage.setItem("salary",45000)
+            localStorage.setItem("lastItem","xyz")
+        }
+        const disp=()=>{
+            let a=localStorage.getItem("name")
+            let b=localStorage.getItem("age")
+            let c=localStorage.getItem("salary")
+            let d=localStorage.getItem("lastItem")
+        
+        document.getElementById("demo").innerHTML="Name is "+a
+        document.getElementById("demo").innerHTML+="<br>Age is "+b
+        document.getElementById("demo").innerHTML+="<br>Salary is "+c
+        document.getElementById("demo").innerHTML+="<br>LastItem is "+d
+        }
+        const delData=()=>{
+            localStorage.removeItem("age")
+        }
+        const delAll=()=>{
+            localStorage.clear()
+        }
+    </script>
+</body>
+</html>
