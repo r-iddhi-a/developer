@@ -1,0 +1,142 @@
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { useState } from "react"
+import { Form, Col, Row, Container, Button, Table } from "react-bootstrap";
+
+const Practice = () => {
+    const [name, setName] = useState("")
+    const [age, setAge] = useState("")
+    const [salary, setSalary] = useState("")
+    const [data, setData] = useState([])
+    const [id, setId] = useState('')
+    const handleName = (e) => {
+        setName(e.target.value)
+    }
+    const saveData = (e) => {
+        e.preventDefault();
+        if(id!=""){
+            let res=data.map((i,index)=>{
+                if(index==id){
+                    i.name=name
+                    i.age=age
+                    i.salary=salary
+                }
+                return i
+            })
+
+        }
+        else{
+            //insert 
+            setData([
+                ...data,
+                {
+                    "name":name,
+                    "age":age,
+                    "salary":salary
+                }
+            ])
+
+            }
+            setName("");
+            setAge("");
+            setSalary("");
+            setId("");
+        }
+    
+    const  delData= (id) => {
+        let res =data.filter((i, index) => {
+            return index != id
+        })
+        setData(res)
+    }
+    const editData=(id)=>{
+        let res=data.find((i,index)=>{
+            return index == id
+        })
+        setName(res.name)
+        setAge(res.age)
+        setSalary(res.salary)
+        setId(res.id)
+    }
+
+    return (
+        <div>
+            <Container fluid>
+                <Row>
+                    <Col>
+                        <h3>Form</h3>
+                        <Form name="frm" method="post" action="#" onSubmit={saveData}>
+                            <Form.Group className="mb-3" controlId="formGroupemail">
+                                <Form.Label>Name</Form.Label>
+                                <Form.Control
+                                    type="text"
+                                    placeholder="Enter Name"
+                                    name="name"
+                                    onChange={handleName}
+                                    value={name}
+                                />
+                            </Form.Group>
+                            <Form.Group className="mb-3" controlId="formGroupPassword">
+                                <Form.Label>Age</Form.Label>
+                                <Form.Control
+                                    type="number"
+                                    placeholder="Enter Age"
+                                    name="age"
+                                    onChange={(e) => setAge(e.target.value)}
+                                    value={age}
+                                />
+                            </Form.Group>
+                            <Form.Group className="mb-3" controlId="formGroupPassword">
+                                <Form.Label>Salary</Form.Label>
+                                <Form.Control
+                                    type="number"
+                                    placeholder="Enter Salary"
+                                    name="salary"
+                                    onChange={(e) => setSalary(e.target.value)}
+                                    value={salary}
+                                />
+                            </Form.Group>
+                            <Button variant="primary" type="submit"> Save</Button>
+                            <Button variant="danger" type="reset">Cancel</Button>
+                        </Form>
+                    </Col>
+                    <Col>
+                        <h3>Table</h3>
+                        <Table striped bordered hover>
+                            <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>Name</th>
+                                    <th>Age</th>
+                                    <th>Salary</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {
+                                    data.map((i,index)=>{
+                                        return(
+                                            <tr>
+                                                <td>{index+1}</td>
+                                                <td>{i.name}</td>
+                                                <td>{i.age}</td>
+                                                <td>{i.salary}</td>
+                                                 <td>
+                                                <Button variant="danger" type="button" onClick={()=>delData
+                                                (index)}> Delete
+                                                </Button>
+                                                 <Button variant="primary" type="button" onClick={()=>editData
+                                                (index)}> Edit</Button>   
+                                                </td>
+                                            </tr>
+                                        )       
+                                    })
+                                }
+                            </tbody>
+                        </Table>
+                    </Col>
+                </Row>
+            </Container>
+        </div>
+    );
+};
+export default Practice;
