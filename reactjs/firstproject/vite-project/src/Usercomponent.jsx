@@ -1,7 +1,7 @@
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { useState } from 'react';
-import { Form, Button, Row, Col, Container, Table } from 'react-bootstrap'
+import { Form, Button, Row, Col, Container, Table } from 'react-bootstrap';
 
 const Usercomponent=()=> {
     const[name,setName]=useState("")
@@ -24,11 +24,13 @@ const Usercomponent=()=> {
                 }
                 return i
             })
+            setData(res)
         }
         else{
             //insert
         setData([
             ...data,
+           // {name,age,salary},
         {
             "name":name,
             "age":age,
@@ -40,7 +42,7 @@ const Usercomponent=()=> {
     setAge("");
     setSalary("");
     setId("");  
-}
+};
 
     const delData=(id)=>{
         //1 2 3  5 id=4
@@ -122,10 +124,10 @@ const Usercomponent=()=> {
                                                 <td>{i.age}</td>
                                                 <td>{i.salary}</td>
                                                 <td>
-                                                <Button variant="danger" type="button" onClick={()=>delData
+                                                <Button variant="danger" type="submit" onClick={()=>delData
                                                 (index)}> Delete
                                                 </Button>
-                                                 <Button variant="primary" type="button" onClick={()=>editData
+                                                 <Button variant="primary" type="submit" onClick={()=>editData
                                                 (index)}> Edit</Button>   
                                                 </td>
                                             </tr>

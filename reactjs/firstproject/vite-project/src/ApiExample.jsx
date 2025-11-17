@@ -1,15 +1,15 @@
-import React, { useEffect, useState } from 'react'
-import axios from 'axios';
+import React, { useEffect, useState } from "react";
+// import axios from "axios";
 
 const ApiExample = () => {
-    const [userdata, setUserdata] = useState([]);
+    const [Userdata, setUserdata] = useState([]);
     useEffect(() => {
-        axios.get("'https://fakestoreapi.com/users'")
-        .then((res)=>console.log(res))
+        // axios.get("https://fakestoreapi.com/users")
+        // .then((res)=>console.log(res))
 
-        // fetch('https://fakestoreapi.com/users')
-        //     .then(response => response.json())
-        //     .then(data => setUserdata(data));
+        fetch('https://fakestoreapi.com/users')
+            .then(response => response.json())
+            .then(data => setUserdata(data));
         //     .catch((err)=>{
         //      console.log(err);
         //    console.log("Error in API calling")    
@@ -22,14 +22,14 @@ const ApiExample = () => {
                <thead>
                     <tr>
                         <th>Id</th>
-                        <th>Usename</th>
+                        <th>Username</th>
                         <th>Email</th>
                         <th>Phone No</th>
                     </tr>
                </thead>
                <tbody>
                 {
-                    setUserdata.map((i)=>{
+                    Userdata.map((i)=>{
                         return(
                             <tr>
                                 <td>{i.id}</td>

@@ -8,7 +8,7 @@ import { PropExample } from './PropExample'
 import { ReactComponent } from './ReactComponent'
 import Practice from './Practice'
 import { EmpComponent } from './EmpComponent'
-import { ApiExample } from './ApiExample'
+import ApiExample from './ApiExample'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -18,13 +18,14 @@ function App() {
      <h3>vite project</h3>
      {/* <ClassExample/> */}
      {/* <LifecycleClass/> */}
-       {/* <Usercomponent/>   */}
+        {/* <Usercomponent/>   */}
       {/* <PropExample myname="riddhi" myage="21"/>  */}
      {/* <PropExample2/> */}
      {/* <ReactComponent/> */}
       {/* <Practice/>  */}
-     {/* <EmpComponent/>  */}
-     <ApiExample/>
+      <EmpComponent/>  
+     {/* <ApiExample/> */}
+     {/* <ApiExample /> */}
     </>
   )
 }
