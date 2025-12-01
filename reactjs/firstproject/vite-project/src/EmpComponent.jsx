@@ -27,7 +27,9 @@ export const EmpComponent = () => {
             //let res = alldata.map((i,index)=>{
             //   if(index == id){
             //        i=data;
-            //    }});
+            //    }
+            //    return i
+            //});
             setallData(res)
         } else {
             setallData([...allData, data]);

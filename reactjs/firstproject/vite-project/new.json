@@ -1,0 +1,16 @@
+{
+  "users": [
+    {
+      "name": "jisha",
+      "age": 23,
+      "salary": 34000,
+      "id": "bccf"
+    },
+    {
+      "id": "3fe5",
+      "name": "dfghy",
+      "age": "45",
+      "salary": "67000"
+    }
+  ]
+}

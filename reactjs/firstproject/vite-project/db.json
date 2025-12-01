@@ -1,0 +1,30 @@
+{
+  "users": [
+    {
+      "name": "jisha",
+      "age": "34",
+      "salary": "67000",
+      "id": "1"
+    },
+    {
+      "id": "3a54",
+      "name": "krina",
+      "age": "34",
+      "salary": "50000"
+    },
+    {
+      "id": "fce3",
+      "name": "tina67",
+      "age": "5",
+      "salary": "56000"
+    },
+    {
+      "id": "24d9",
+      "name": "bvhj",
+      "age": "23",
+      "salary": "450000"
+    }
+  ],
+  "category": [],
+  "emp": []
+}
