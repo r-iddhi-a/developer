@@ -15,10 +15,10 @@ const Navigation = () => {
             <Nav.Link href="/first">Active</Nav.Link>
           </Nav.Item>
           <Nav.Item>
-            <Nav.Link href="/link">Link</Nav.Link>
+            <Nav.Link to="/link">Link</Nav.Link>
           </Nav.Item>
           <Nav.Item>
-            <Nav.Link href="/disabled" disabled>
+            <Nav.Link href="disabled" disabled>
               Disabled
             </Nav.Link>
           </Nav.Item>

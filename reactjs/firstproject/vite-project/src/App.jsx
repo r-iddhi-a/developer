@@ -25,6 +25,8 @@ import { Home1 } from './Home1'
 import { UseRefExample } from './UseRefExample'
 import { ContextExample } from './ContextExample'
 import UseContextExample from './UseContextExample'
+import  CrudComponent  from './CrudComponent'
+import  OldCrud  from './OldCrud'
 
 
 
@@ -55,17 +57,19 @@ function App() {
       {/* <Practice/>  */}
       {/* <EmpComponent/>   */}
      {/* <ApiExample />  */}
-      <ApiCrudExample/> 
+      {/* <ApiCrudExample/>  */}
         {/* <NewCrud/>  */}
       {/* <Navigation/>
       <Routes>
         <Route path='/first' element={<First/>}/>
          <Route path='/link' element={<Link/>}/>
-      </Routes> */}
+      </Routes>  */}
       {/* <Home1/>
       <UseRefExample/> */}
       {/* <ContextExample/> */}
       {/* <UseContextExample/> */}
+      {/* <CrudComponent/> */}
+      <OldCrud/>
     </>
   )
 }

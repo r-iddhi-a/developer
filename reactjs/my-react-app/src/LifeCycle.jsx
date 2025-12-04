@@ -1,39 +1,52 @@
 import React, { Component } from 'react'
 
-class LifeCycle extends Component {
-    constructor(props){
-        super(props)
-        this.state={
-            users:[],
-            loading:true
-        };
-    }
-
-  componentDidMount(){
-    console.log("Component mounted..");
-
-    fetch('https://fakestoreapi.com/users')
-      .then(response => response.json())
-      .then(data => {
-        this.setState({users:data,loading:false});
-      })
-      .catch((error)=>console.log("Error factching data:",error));
-
+export default class 
+ extends Component {
+  constructor(props){
+    super(props);
+    this.state={
+      count:0,
+      name:this.props.myname,
+    };
+    console.log("Constructor Called..")
   }
+  componentDidMount(){
+    console.log("ComponentDidMount Called...")
+    setTimeout(()=>{
+      this.setState({
+        name:"riddhi",
+      })
+    },3000)
+  }
+  static getDerivedStateFromProps(props,state){
+     console.log("getDerivedStateFromProps called...");
+     console.log("props")
+     console.log(props);
+     console.log("state")
+     console.log(state)
+     return null
+  }
+  shouldComponentUpdate(){
+    console.log('shouldComponentUpdate called');
+    return true
+  }
+  getSnapshotBeforeUpdate(prevProps,prevState){
+    console.log("getSnapshotBeforeUpdate Called...")
+    console.log("Previous State")
+    console.log(prevState)
+    return null
+  }
+  componentDidUpdate(){
+     console.log('Finally component updated...');
+  }
+
   render() {
-    const{users,loading}=this.state;
     return (
       <div>
-        <h2>Fetched Users</h2>
-        {loading ? 
-        (<p>Loading...</p>):
-        (<ul>
-          {users.map((users)=>{
-            <li key={users.id}>{users.name}</li>
-          })}
-        </ul>)}
+        <h3>LifeCycle Example</h3>
+        <h4>Name is--{this.state.name}</h4>
+        <h4>Count is--{this.state.count}</h4>
       </div>
     )
   }
 }
-export default LifeCycle;

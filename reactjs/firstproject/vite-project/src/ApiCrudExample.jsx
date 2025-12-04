@@ -10,7 +10,7 @@ const ApiCrudExample = () => {
    const[alldata,setAlldata]=useState([])
    const[id,setId]=useState('')
    const handleChange=(e)=>{
-    const{name,value}=e.target
+    let{name,value}=e.target
     setData({
         ...data,
         [name]:value

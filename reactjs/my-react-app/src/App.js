@@ -8,6 +8,11 @@ import UserCard from './UserCard';
 import Counter from './Counter';
 import FormComponent  from './FormComponent';
 import LifeCycle from './LifeCycle';
+import Event from './Event';
+import LoginLogout from './LoginLogout';
+import VoteComponent from './VoteComponent';
+import List from './List';
+import Key from './Key';
 
 function App() {
   return (
@@ -19,7 +24,12 @@ function App() {
       <UserCard name="Siya" age="21" location="India"/>
       <Counter/> */}
       {/* <FormComponent/> */}
-      <LifeCycle/>
+      {/* <LifeCycle/> */}
+      <Event/>
+      {/* <LoginLogout/> */}
+      {/* <VoteComponent/> */}
+      {/* <List/> */}
+      {/* <Key/> */}
     </div>
     
   );
