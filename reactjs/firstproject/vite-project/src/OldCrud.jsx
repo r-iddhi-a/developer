@@ -1,106 +1,51 @@
-import React, { useState } from 'react'
+import React, { useCallback, useState } from 'react'
+import Display from './Display'
 
 const OldCrud = () => {
-    const [data,setData]=useState([])
-    const [name,setName]=useState("")
-    const [age,setAge]=useState("")
-    const [salary,setSalary]=useState("")
-    const [id,setId]=useState("")
-    const handleName=(e)=>{
-        setName(e.target.value)
-    }
-    const editdata=(id)=>{
-        let res=data.find((i,index)=>{
-            return index==id
+    const [data,setData]=useState({
+        name:"",
+        age:"",
+        salary:""
+    })
+    const [alldata,setAllData]=useState([])
+    const handleChange=(e)=>{
+        let {name,value}=e.target
+        setData({
+            ...data,
+            [name]:value
         })
-        setName(res.name)
-        setAge(res.age)
-        setSalary(res.salary)
-        setId(id)
     }
-    const deldata=(id)=>{
-        let res=data.filter((i,index)=>{
-            return index!=id
-        })
-        setData(res)
-    }
-    const saveData=(e)=>{
+    const saveData=useCallback((e)=>{
         e.preventDefault()
-        if(id!="")
-        {
-            let res=data.map((i,index)=>{
-                if(index==id){
-                    i.name=name
-                    i.age=age
-                    i.salary=salary
-                }
-                return i
-            })
-            setData(res)
-        }
-        else{
-            setData([
-                ...data,
-                {
-                   "name":name,
-                   "age":age,
-                   "salary":salary
-                }
-            ])
-        }
-        setName(""),
-        setAge(""),
-        setSalary(""),
-        setId("");
-
-    }
+        setAllData([...alldata,data])
+        setData({
+            name:"",
+            age:"",
+            salary:""
+        })
+    },[data])
+    // useCallback hooks = to prevent unneccesary function 
+    // -->returns memoized function
+    //--> to freeze a function
   return (
     <div>
-        <h3>Long Crud</h3>
-        <form action="#" method="post" name='frm' onSubmit={saveData}>
+        <h3>Crud</h3>
+        <form method='post' action="#" name="frm" onSubmit={saveData}>
         <label htmlFor="">Name:</label>
-        <input type='text' name='name' id="name" value={name} onChange={handleName}/>
+        <input type="text" name='name' id="name" value={data.name} onChange={handleChange}/>
         <br/><br/>
 
         <label htmlFor="">Age:</label>
-        <input type='number' name='age' id="age" value={age} onChange={(e)=>setAge(e.target.value)}/>
+        <input type="number" name='age' id="age" value={data.age} onChange={handleChange}/>
         <br/><br/>
 
         <label htmlFor="">Salary:</label>
-        <input type='number' name='salary' id="salry" value={salary} onChange={(e)=>setSalary(e.target.value)}/>
+        <input type="number" name='salary' id="salary" value={data.salary} onChange={handleChange}/>
         <br/><br/>
         <input type="submit" value="Save" />
         </form>
         <br/><br/>
-        <table>
-            <thead>
-                <tr>
-                    <th>#</th>
-                    <th>Name</th>
-                    <th>Age</th>
-                    <th>Salary</th>
-                    <th>Action</th>
-                </tr>
-            </thead>
-            <tbody>
-                {
-                    data.map((i,index)=>{
-                        return(
-                            <tr>
-                                <td>{index+1}</td>
-                                <td>{i.name}</td>
-                                <td>{i.age}</td>
-                                <td>{i.salary}</td>
-                                <td>
-                                    <button onClick={()=>editdata(index)}>Edit</button>
-                                    <button onClick={()=>deldata(index)}>Delete</button>
-                                </td>
-                            </tr>
-                        )
-                    })
-                }
-            </tbody>
-        </table>
+       <Display alldata={alldata}/>
     </div>
   )
 }

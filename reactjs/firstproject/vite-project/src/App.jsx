@@ -27,7 +27,13 @@ import { ContextExample } from './ContextExample'
 import UseContextExample from './UseContextExample'
 import  CrudComponent  from './CrudComponent'
 import  OldCrud  from './OldCrud'
-
+import { Demo } from './Demo'
+import MemoExample from './MemoExample'
+import API from './API'
+import LocalstorageCrud from './LocalstorageCrud'
+import Local from './Local'
+import Cont from './Cont'
+import UseM from './UseM'
 
 
 
@@ -62,14 +68,20 @@ function App() {
       {/* <Navigation/>
       <Routes>
         <Route path='/first' element={<First/>}/>
-         <Route path='/link' element={<Link/>}/>
-      </Routes>  */}
-      {/* <Home1/>
-      <UseRefExample/> */}
+         <Route path='/link' element={<Demo/>}/>
+      </Routes>   */}
+      {/* <Home1/> */}
+      {/* <UseRefExample/> */}
       {/* <ContextExample/> */}
       {/* <UseContextExample/> */}
       {/* <CrudComponent/> */}
-      <OldCrud/>
+       {/* <OldCrud/> */}
+      {/* <MemoExample/> */}
+      {/* <API/> */}
+      {/* <LocalstorageCrud/> */}
+      {/* <Local/> */}
+      {/* <Cont/> */}
+      <UseM/>
     </>
   )
 }

@@ -13,6 +13,16 @@ import LoginLogout from './LoginLogout';
 import VoteComponent from './VoteComponent';
 import List from './List';
 import Key from './Key';
+import CounterComponent from './CounterComponent';
+import UseEffect from './UseEffect';
+import Navigation from './Navigation';
+import { First } from './First';
+import { Demo } from './Demo';
+import { BrowserRouter, Routes } from 'react-router'
+import { Route } from 'react-router';
+import { ContextApi } from './Context/ContextApi';
+import UserEvent from './UserEvent';
+
 
 function App() {
   return (
@@ -25,11 +35,23 @@ function App() {
       <Counter/> */}
       {/* <FormComponent/> */}
       {/* <LifeCycle/> */}
-      <Event/>
+      {/* <Event/> */}
       {/* <LoginLogout/> */}
       {/* <VoteComponent/> */}
       {/* <List/> */}
       {/* <Key/> */}
+      {/* <CounterComponent/> */}
+      {/* <UseEffect/> */}
+
+      {/* <Navigation/>
+      <BrowserRouter>
+      <Routes>
+        <Route path='/first' element={<First/>}/>
+         <Route path='/link' element={<Demo/>}/>
+      </Routes>
+      </BrowserRouter>   */}
+      <ContextApi/>
+      {/* <UserEvent/> */}
     </div>
     
   );
