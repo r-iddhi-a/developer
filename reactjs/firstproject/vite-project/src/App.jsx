@@ -32,9 +32,6 @@ import MemoExample from './MemoExample'
 import API from './API'
 import LocalstorageCrud from './LocalstorageCrud'
 import Local from './Local'
-import Cont from './Cont'
-import UseM from './UseM'
-
 
 
 function App() {
@@ -80,8 +77,7 @@ function App() {
       {/* <API/> */}
       {/* <LocalstorageCrud/> */}
       {/* <Local/> */}
-      {/* <Cont/> */}
-      <UseM/>
+      
     </>
   )
 }

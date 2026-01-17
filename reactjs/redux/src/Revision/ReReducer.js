@@ -1,14 +1,11 @@
-import { createSlice } from "@reduxjs/toolkit"
-import { act } from "react"
-
+import { createSlice } from "@reduxjs/toolkit";
 const initialState={
     data:[]
 }
-const CoReducer=createSlice({
-    name:"Riddhi",
+const ReReducer=createSlice({
+    name:"User",
     initialState,
-    reducers:
-    {
+    reducers:{
         ins:(state,action)=>{
             state.data=[...state.data,action.payload]
         },
@@ -25,5 +22,5 @@ const CoReducer=createSlice({
         }
     }
 })
-export const {ins,del,upd}=CoReducer.actions
-export default CoReducer.reducer
+export const {ins,del,upd}=ReReducer.actions
+export default ReReducer.reducer

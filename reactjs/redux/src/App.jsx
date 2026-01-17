@@ -6,9 +6,9 @@ import CounterComponent from './CounterComponent'
 import { UserComponent } from './CrudRedux/UserComponent'
 import { RtkComponent } from './RTK/RtkComponent'
 import FirebaseCRUD from './CrudRedux/FirebaseCRUD'
-import CoComponent from './CoComponent'
 import  UseContext  from './Practical/UseContext'
 import UseRef from './Practical/UseRef'
+import ReComponent from './Revision/ReComponent'
 
 
 function App() {
@@ -20,11 +20,9 @@ function App() {
       {/* <UserComponent/> */}
       {/* <RtkComponent/> */}
       {/* <FirebaseCRUD/> */}
-      {/* <CoComponent/> */}
-      
-      <UseContext/>
+      {/* <UseContext/> */}
       {/* <UseRef/> */}
-      
+      <ReComponent/>
     </>
   )
 }
